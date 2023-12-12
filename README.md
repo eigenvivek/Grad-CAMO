@@ -24,7 +24,7 @@ We use `UMAP` to visualize the features extracted via supervised learning. The i
 
 These embeddings are highly seperable! Good clusters means good feature vectors... right?
 
-**No.** Using `[Grad-CAM`](https://github.com/jacobgil/pytorch-grad-cam), we can visualize where the `EfficientNet` is looking in the image to make its prediction. For the examples below, we can see that the model sometime looks at the cell of interest, sometimes at its neighbors, and sometimes *at the image backround where no biological information is present*. This evidence of model cheating demonstrates that there is confounding information in the learned feature vectors.
+**No.** Using [`Grad-CAM`](https://github.com/jacobgil/pytorch-grad-cam), we can visualize where the `EfficientNet` is looking in the image to make its prediction. For the examples below, we can see that the model sometime looks at the cell of interest, sometimes at its neighbors, and sometimes *at the image backround where no biological information is present*. This evidence of model cheating demonstrates that there is confounding information in the learned feature vectors.
 
 <img width="1892" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/7f325a79-d142-49c5-840b-32a9a1ae5f49">
 <img width="1892" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/a62fc597-bb25-4d93-9e50-cdd0f103f980">
