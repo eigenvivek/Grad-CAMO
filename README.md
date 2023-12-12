@@ -34,7 +34,7 @@ These embeddings are highly seperable! Good clusters means good feature vectors.
 ## Grad-CAMO: a new interpretability metric
 
 To quantify the biological relevance of a learned feature vector, we propose combining the Grad-CAM map with the single-cell segmentations produced by `cellpose`. Our proposed metric, Grad-CAM Overlap (`Grad-CAMO`), produces a quality score for every single-cell embedding where 0 is the worst and 1 is the best.
-**In future work, `Grad-CAMO` could be used as a regularizer when training supervised feature extractors.
+**In future work, `Grad-CAMO` could be used as a regularizer when training supervised feature extractors.**
 
 <img width="1167" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/e15ef478-6f86-4aa1-b54d-4dff19634962">
 
