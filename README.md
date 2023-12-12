@@ -28,15 +28,20 @@ These embeddings are highly seperable! Good clusters means good feature vectors.
 
 <img width="1892" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/7f325a79-d142-49c5-840b-32a9a1ae5f49">
 <img width="1892" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/a62fc597-bb25-4d93-9e50-cdd0f103f980">
+
 > Red areas are where the model is paying the most attention to when making its prediction.
 
 ## Grad-CAMO: a new interpretability metric
 
 To quantify the biological relevance of a learned feature vector, we propose combining the Grad-CAM map with the single-cell segmentations produced by `cellpose`. Our proposed metric, Grad-CAM Overlap (`Grad-CAMO`), produces a quality score for every single-cell embedding where 0 is the worst and 1 is the best.
+**In future work, `Grad-CAMO` could be used as a regularizer when training supervised feature extractors.
 
 <img width="1167" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/e15ef478-6f86-4aa1-b54d-4dff19634962">
+
 > We find that only 47% of learned morphological profiles have Grad-CAMs that overlap with the cell’s segmentation map in our dataset.
 
 ## Cell Painting channels are highly correlated
 
 <img width="1179" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/f3b1f1f8-c33e-4bbd-84fa-22e240bb7ac5">
+
+> Evaluations performed on the open-source [`RxRx1`](https://www.rxrx.ai/rxrx1) dataset.
