@@ -1,6 +1,6 @@
 # Learning interpretable single-cell morphological profiles from 3D Cell Painting images
 
-[**Vivek Gopalakrishnan**](vivekg.dev),
+[**Vivek Gopalakrishnan**](https://vivekg.dev/),
 [Jingzhe Ma](https://www.linkedin.com/in/jingzhe-ma),
 [Zhiyong Xie](https://scholar.google.com/citations?user=0DsebPAAAAAJ)
 \
