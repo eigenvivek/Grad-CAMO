@@ -41,4 +41,5 @@ To quantify the biological relevance of a learned feature vector, we propose com
 ## Cell Painting channels are highly correlated
 
 <img width="1179" alt="image" src="https://github.com/eigenvivek/zlearn/assets/29757116/f3b1f1f8-c33e-4bbd-84fa-22e240bb7ac5">
+
 > Evaluations performed on the open-source [`RxRx1`](https://www.rxrx.ai/rxrx1) dataset.
