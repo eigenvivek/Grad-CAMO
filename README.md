@@ -10,6 +10,16 @@
 \
 **Winner of the 2023 SBI2 President's Innovation Award**
 
+```
+@inproceedings{gopalakrishnan2024grad,
+  title={Grad-CAMO: Learning Interpretable Single-Cell Morphological Profiles from 3D Cell Painting Images},
+  author={Gopalakrishnan, Vivek and Ma, Jingzhe and Xie, Zhiyong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={6988--6996},
+  year={2024}
+}
+```
+
 ## Abstract
 Quantifying the phenotypic effects of experimental perturbations from high-throughput imaging assays, a feature extraction process known as morphological profiling, is a necessary and challenging step in the analysis of Cell Painting data. Whereas traditional methods use handcrafted image processing algorithms to extract human-designed descriptors of cellular morphology, recent methods have taken a deep learning approach, training neural networks to extract features learned to be relevant from raw imaging data. While learned morphological profiles have been shown to enable better performance in downstream analysis tasks, the question of interpretability limits deep learning-based approaches: how can we ensure that the morphological profiles extracted by black-box deep learning models actually capture biologically relevant information about single cells, rather than exploiting confounding factors present in image data to minimize training loss (e.g., batch effects)? To address this uncertainty, we propose combining morphological profiles obtained using supervised learning with Gradient-weighted Class Activation Mapping (Grad-CAM), a technique that uses the gradients produced by a deep learning model to localize which regions of an input image the model paid the most attention to when making its prediction. Using single-cell segmentations produced by Cellpose (a generalist segmentation algorithm), we can measure, for each learned morphological profile, what proportion of the model’s attention is concentrated on the cell of interest versus the background. Using this interpretability metric, we can identify which morphological profiles capture biologically relevant components of the input image, helping to visualize the influence of confounders on the extracted features. Using a 3D convolutional neural network, we demonstrate how to scale this technique to 3D Cell Painting images: in a dataset of single-cell z-stacks, we find that only 47% of learned morphological profiles have Grad-CAMs that overlap with the cell’s segmentation map. This demonstrates that supervised feature extractors can cheat by exploiting non-biological information in microscopy data. Motivated by this disadvantage of supervised learning, we also explore self-supervised approaches for learning interpretable morphological profiles from single-cell 3D Cell Painting images.
 
